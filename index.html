@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car Service Station</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+      integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="bg-gray-900 text-gray-100">
+    <!-- Navbar -->
+    <nav class="bg-gray-800 shadow-md sticky top-0 z-50">
+      <div
+        class="container mx-auto flex justify-between items-center py-4 px-4 md:px-6"
+      >
+        <a href="#" class="text-2xl font-bold text-yellow-500">CarServicePro</a>
+        <button id="menu-toggle" class="block md:hidden focus:outline-none">
+          <i class="ri-menu-line text-2xl text-white"></i>
+        </button>
+        <ul id="menu" class="hidden md:flex space-x-6">
+          <li><a href="#" class="hover:text-gray-400">Home</a></li>
+          <li><a href="#services" class="hover:text-gray-400">Services</a></li>
+          <li><a href="#reviews" class="hover:text-gray-400">Reviews</a></li>
+          <li><a href="#about" class="hover:text-gray-400">About Us</a></li>
+          <li><a href="#contact" class="hover:text-gray-400">Contact</a></li>
+        </ul>
+      </div>
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden bg-gray-800">
+        <ul class="space-y-4 py-4 px-4">
+          <li><a href="#" class="block hover:text-gray-400">Home</a></li>
+          <li>
+            <a href="#services" class="block hover:text-gray-400">Services</a>
+          </li>
+          <li>
+            <a href="#reviews" class="block hover:text-gray-400">Reviews</a>
+          </li>
+          <li>
+            <a href="#about" class="block hover:text-gray-400">About Us</a>
+          </li>
+          <li>
+            <a href="#contact" class="block hover:text-gray-400">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      class="bg-cover bg-center h-[90vh] text-center"
+      style="
+        background-image: url('./Assets/Background-image.webp');
+      "
+    >
+      <div
+        class="container text-center mx-auto h-full flex flex-col justify-center items-center text-white px-4 md:px-6"
+      >
+        <h1 class="text-4xl md:text-6xl font-bold leading-tight">
+          Expert Car Services for Your Vehicle
+        </h1>
+        <p class="mt-4 text-center text-lg md:text-xl">
+          Reliable, fast, and professional car repair and maintenance services.
+        </p>
+        <a
+          href="#services"
+          class="mt-6 px-6 py-3 bg-yellow-500 text-black font-semibold rounded"
+          >Explore Services</a
+        >
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-gray-800">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold mb-8 text-center text-yellow-500">
+          Our Services
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          <div class="text-center bg-gray-700 shadow-md rounded-lg p-6">
+            <i class="ri-car-line text-4xl text-yellow-500 mx-auto mb-4"></i>
+            <h3 class="text-2xl font-semibold">Oil Change</h3>
+            <p class="mt-2 text-gray-400">
+              Keep your engine running smoothly with regular oil changes.
+            </p>
+          </div>
+          <div class="text-center bg-gray-700 shadow-md rounded-lg p-6">
+            <i class="ri-tools-line text-4xl text-yellow-500 mx-auto mb-4"></i>
+            <h3 class="text-2xl font-semibold">Brake Services</h3>
+            <p class="mt-2 text-gray-400">
+              Professional brake inspections and repairs for your safety.
+            </p>
+          </div>
+          <div class="text-center bg-gray-700 shadow-md rounded-lg p-6">
+            <i class="ri-caravan-line text-4xl text-yellow-500 mx-auto mb-4"></i>
+            <h3 class="text-2xl font-semibold">Tire Services</h3>
+            <p class="mt-2 text-gray-400">
+              Tire repairs, rotations, and replacements to keep you safe.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-16 bg-gray-900">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold mb-8 text-center text-yellow-500">
+          About Us
+        </h2>
+        <p class="text-center text-gray-400 max-w-2xl mx-auto">
+          At CarServicePro, we are committed to delivering high-quality car
+          repair and maintenance services. With over 10 years of experience, our
+          expert team ensures that your vehicle runs smoothly and safely. Our
+          mission is to provide fast, reliable, and affordable car services that
+          keep you on the road with peace of mind.
+        </p>
+      </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="py-16 bg-gray-900">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold mb-8 text-center text-yellow-500">
+          Customer Reviews
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="bg-gray-700 shadow-md rounded-lg p-6">
+            <div class="flex items-center mb-4">
+              <img
+                src="./Assets/User1.jpg"
+                alt="John Doe"
+                class="rounded-full w-12 h-12 mr-4"
+              />
+              <h4 class="text-lg font-semibold text-white">John Doe</h4>
+            </div>
+            <p class="text-gray-400">
+              "Great service! My car is running like new. Highly recommend."
+            </p>
+          </div>
+          <div class="bg-gray-700 shadow-md rounded-lg p-6">
+            <div class="flex items-center mb-4">
+              <img
+                src="./Assets/User2.jpg"
+                alt="Jane Smith"
+                class="rounded-full w-12 h-12 mr-4"
+              />
+              <h4 class="text-lg font-semibold text-white">Jane Smith</h4>
+            </div>
+            <p class="text-gray-400">
+              "The team was quick, efficient, and professional. Thank you!"
+            </p>
+          </div>
+          <div class="bg-gray-700 shadow-md rounded-lg p-6">
+            <div class="flex items-center mb-4">
+              <img
+                src="./Assets/User3.jpg"
+                alt="Michael Brown"
+                class="rounded-full w-12 h-12 mr-4 "
+                
+              />
+              <h4 class="text-lg font-semibold text-white">Michael Brown</h4>
+            </div>
+            <p class="text-gray-400">
+              "I trust them with all my car repairs. Exceptional service!"
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="car-logos" class="py-16 bg-gray-900">
+        <div class="container mx-auto px-6 text-center">
+          <h2 class="text-3xl font-bold mb-8 text-yellow-500">
+            Trusted Car Brands
+          </h2>
+          <div
+            class="grid grid-cols-2 sm:grid-cols-4 gap-6 place-items-center text-center"
+          >
+            <img src="./Assets/ToyotaLogo.png" alt="Toyota" class="h-20 w-auto" />
+            <img src="./Assets/BMWLogo.png" alt="BMW" class="h-20 w-auto" />
+            <img src="./Assets/MercedesLogo.png" alt="Mercedes-Benz" class="h-20 w-auto" />
+            <img src="./Assets/AudiLogo.png" alt="Audi" class="h-20 w-auto" />
+          </div>
+        </div>
+      </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="py-16 bg-gray-800">
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold mb-8 text-yellow-500">
+          Book an Appointment
+        </h2>
+        <p class="text-gray-400 mb-8">
+          Schedule your car service easily online. Just fill out the form below,
+          and we will confirm your appointment.
+        </p>
+        <form
+          action="#"
+          method="POST"
+          class="max-w-xl mx-auto bg-gray-700 p-6 rounded-lg shadow-md"
+        >
+          <input
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            class="w-full mb-4 px-4 py-2 rounded-md bg-gray-600 text-gray-200"
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Your Email"
+            class="w-full mb-4 px-4 py-2 rounded-md bg-gray-600 text-gray-200"
+            required
+          />
+          <input
+            type="text"
+            name="service"
+            placeholder="Service Needed"
+            class="w-full mb-4 px-4 py-2 rounded-md bg-gray-600 text-gray-200"
+            required
+          />
+          <button
+            type="submit"
+            class="px-6 py-3 bg-yellow-500 text-black font-semibold rounded"
+          >
+            Book Now
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <footer id="contact" class="bg-gray-800 text-white py-8">
+      <div class="container mx-auto px-6">
+        <div
+          class="flex flex-col sm:flex-row sm:justify-between justify-between items-center"
+        >
+          <p>&copy; 2024 CarServicePro. All rights reserved.</p>
+          <ul class="flex space-x-4">
+            <li><a href="#" class="hover:text-gray-400">Privacy Policy</a></li>
+            <li>
+              <a href="#" class="hover:text-gray-400">Terms of Service</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Mobile Menu Script -->
+    <script>
+      const toggleButton = document.getElementById("menu-toggle");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      toggleButton.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
